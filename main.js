@@ -83,7 +83,6 @@ function validarFormulario(event) {
         "descripcion-regalo": errorDescripcionRegalo,
     };
     console.log(errores);
-
     const todoEnOrden = manejarErrores(errores) === 0;
 
     if (todoEnOrden) {
@@ -92,9 +91,8 @@ function validarFormulario(event) {
         setTimeout(function () {
             window.location.href = "wishlist.html";
         }, 5000);
-
-        event.preventDefault();
     }
+    event.preventDefault();
 }
 
 function manejarErrores(errores) {
